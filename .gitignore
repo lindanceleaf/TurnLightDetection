@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+runs/
+*.cache
+*.pt
+
+raw_clips/
+raw_clips_night/
+yolo_dataset/
+yolo_dataset_day/
+yolo_dataset_day_clip_split/
+yolo_dataset_night/

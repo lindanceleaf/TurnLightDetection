@@ -9,6 +9,20 @@
 | 2 | right_on |
 | 3 | right_off |
 
+## 0. 資料與提交連結
+
+下載標註完成的資料後，建議放成以下結構，這樣預設參數可以直接使用：
+
+```text
+yolo_dataset_day/
+  yolo_dataset_day/
+    data.yaml
+    images/
+    labels/
+```
+
+如果資料放在其他位置，執行訓練、檢查或驗證時都可以用 `--data path/to/data.yaml` 指定。
+
 ## 1. 建議建立 Python 3.11 環境
 
 目前這台電腦預設是 Python 3.13。若 `torch` 安裝失敗，建議另外開 Python 3.11 環境：

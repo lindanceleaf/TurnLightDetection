@@ -2,6 +2,8 @@
 
 TurnLightDetection is a YOLO-based CCTV turn-signal detection project. It trains an object detector to classify vehicle turn-signal states from CCTV frames and videos.
 
+The goal is to help review CCTV footage of turning vehicles and identify whether the visible left or right turn signal is on or off. The project keeps the code, training utilities, and documentation in GitHub while storing large datasets and model artifacts outside the repository.
+
 ## Classes
 
 The detector uses four classes:
@@ -61,7 +63,16 @@ python check_cuda.py
 
 ## Dataset
 
-The dataset is managed separately from the code. If cloning this repository from scratch, include submodules:
+The dataset is managed separately from the code. Public code used to collect candidate CCTV clips is kept in the `cctv-turn-signal-dataset/` submodule. The collected and labeled data are shared through Google Drive.
+
+Dataset sources:
+
+| Data | Access |
+|---|---|
+| Data generated from `cctv-turn-signal-dataset/` | <https://drive.google.com/drive/folders/1NKHfG0ha_oyxFv2m64oFI7KpzLd6fbWR?usp=sharing> |
+| Labeled dataset | <https://drive.google.com/drive/folders/1r7A_RUu204unDsdDivVN-3MLRTnw_ozb?usp=sharing> |
+
+If cloning this repository from scratch, include submodules:
 
 ```powershell
 git clone --recurse-submodules https://github.com/lindanceleaf/TurnLightDetection.git
@@ -74,6 +85,14 @@ git submodule update --init --recursive
 ```
 
 This project expects YOLO-format data with a `data.yaml` file. Local dataset folders such as `raw_clips/`, `yolo_dataset/`, `yolo_dataset_day/`, and `yolo_dataset_day_clip_split/` are ignored by Git.
+
+After downloading the labeled dataset, place it so that the default data file is available at:
+
+```text
+yolo_dataset_day/yolo_dataset_day/data.yaml
+```
+
+Alternatively, pass the dataset path explicitly with `--data`.
 
 Audit an existing YOLO dataset:
 

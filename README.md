@@ -4,6 +4,15 @@ TurnLightDetection is a YOLO-based CCTV turn-signal detection project. It trains
 
 The goal is to help review CCTV footage of turning vehicles and identify whether the visible left or right turn signal is on or off. The project keeps the code, training utilities, and documentation in GitHub while storing large datasets and model artifacts outside the repository.
 
+## Team Members
+
+| Name | GitHub |
+|---|---|
+| 吳孟蓉 | `Xavi3r4` |
+| 池丞昊 | - |
+| 劉傳熙 | `Xi0131` |
+| 林秉燁 | `lindanceleaf` |
+
 ## Classes
 
 The detector uses four classes:

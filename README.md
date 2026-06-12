@@ -178,3 +178,4 @@ runs/predict_turn_signal/
 - Training outputs under `runs/` are ignored.
 - Dataset folders are ignored to keep the GitHub repository lightweight.
 - The recommended workflow is to keep code in this repository and keep datasets/checkpoints in a separate storage location or dataset repository.
+

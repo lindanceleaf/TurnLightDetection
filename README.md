@@ -9,7 +9,7 @@ The goal is to help review CCTV footage of turning vehicles and identify whether
 | Name | GitHub |
 |---|---|
 | 吳孟蓉 | `Xavi3r4` |
-| 池丞昊 | - |
+| 池丞昊 | `HowHaoChih` |
 | 劉傳熙 | `Xi0131` |
 | 林秉燁 | `lindanceleaf` |
 
